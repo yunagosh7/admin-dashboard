@@ -6,38 +6,124 @@ body{
 .grid-container{
     display: grid;
     height: 100vh;
+    width: 100vw;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
-    
+    grid-template-rows: repeat(5, 20%);    
 }
-
 
 aside{
     background-color: #cecece;
     grid-row: 1 / 6 ;
 }
 
-
-
 header{
     grid-column: 2 / 6;
     grid-row: 1 / 2;
-    display: flex;
     color: #fff;
     background-color: #7c898b;
 }
 
+header div{
+    height: 50%;
+    display: flex
+}
+
+.up{
+    align-items: center;
+    
+}
+
+.search{
+    margin-left:40px ;
+}
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.up .user-img{
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+}
+
+.up div input{
+    height: 16px;
+    width: 450px;
+    margin: 0 10px;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+}
+.up div .svg{
+    margin-left: 10px;
+}
+
+.up .svg{
+    width: 25px;
+    height: 25px;
+}
+
+.up h3{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+header img{
+    width: 20px;
+    height: 20px;
+}
+
+header div ul {
+    display: flex;
+}
+
+.down{
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+.down img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+
+.down h2{
+    font-size: 1.7rem;
+}
+
+.down ul{
+    justify-self: flex-end;
+    align-items: center;
+}
+
+button{
+    width: 90px;
+    padding: 9px 15px;
+    border-radius: 75px;
+    border: none;
+    margin: 0 10px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
 
 h1{
-    font-size: 2.8rem;
     color: #000;
     font-weight: bold;
 }
 
 
-.user-img{
-    width: 100px;
-}
 
 
 .main-container{
@@ -80,9 +166,13 @@ img{
 
 
 .card{
-    width: max(45%, 300px);
+    width: max(40%, 300px);
     height: 200px;
     margin: 10px;
     background-color: #fff;
     color: #000;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-left: solid 8px rgb(134, 24, 185) ;
 }
