@@ -35,12 +35,19 @@ header div{
 
 .search{
     margin-left:40px ;
+    align-items: center;
 }
 
 .right{
     display: flex;
     justify-content: space-around;
     width: 30%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.right .img{
+    margin: 0 10px;
 }
 
 .up .user-img{
@@ -51,7 +58,7 @@ header div{
 
 .up div input{
     height: 16px;
-    width: 450px;
+    width: max(30vw,100px);
     margin: 0 10px;
     outline: none;
     padding: 10px 15px;
@@ -59,8 +66,15 @@ header div{
     border: none;
     font-size: 1rem;
 }
-.up div .svg{
+.up .right .svg{
     margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.up .right .svg:hover{
+    background-color: #647679;
 }
 
 .up .svg{
@@ -142,6 +156,7 @@ main{
 section{
     grid-row: 1 / 5;
     grid-column: 1 / 4;
+    padding: 20px;
 }
 
 .announcements{
